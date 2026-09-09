@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["./playwright/pages/*"],
+      "@services/*": ["./playwright/services/*"],
+      "@utils/*": ["./playwright/utils/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

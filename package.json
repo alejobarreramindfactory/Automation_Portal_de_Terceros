@@ -1,0 +1,36 @@
+{
+  "name": "playwright-automation-framework",
+  "version": "1.0.0",
+  "description": "Playwright Automation project with Cucumber and API testing support.",
+  "main": "index.js",
+  "scripts": {
+    "bdd:gen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "test:e2e:tst": "bddgen && playwright test --project=e2e --env=TST",
+    "test:api:tst": "bddgen && playwright test --project=api --env=TST",
+    "test:bdd": "bddgen && playwright test",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "Playwright",
+    "Gherkin",
+    "Cucumber",
+    "API",
+    "E2E",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Kiuvi Services",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@faker-js/faker": "^9.6.0",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.5.0",
+    "dotenv": "^17.4.2",
+    "playwright-bdd": "^9.2.0",
+    "typescript": "^7.0.2"
+  }
+}
