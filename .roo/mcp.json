@@ -1,0 +1,14 @@
+{
+	"mcpServers": {
+		"playwright-mcp": {
+			"command": "node",
+			"args": [
+				"--import",
+				"tsx",
+				"mcp-server.ts"
+			],
+			"cwd": "${workspaceFolder}",
+			"disabledTools": []
+		}
+	}
+}

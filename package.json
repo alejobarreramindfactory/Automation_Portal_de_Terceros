@@ -11,7 +11,8 @@
     "test:e2e:tst": "bddgen && playwright test --project=e2e --env=TST",
     "test:api:tst": "bddgen && playwright test --project=api --env=TST",
     "test:bdd": "bddgen && playwright test",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "mcp-server": "npx tsx mcp-server.ts"
   },
   "keywords": [
     "Playwright",
@@ -31,6 +32,10 @@
     "@types/node": "^26.5.0",
     "dotenv": "^17.4.2",
     "playwright-bdd": "^9.2.0",
+    "tsx": "^4.23.13",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
   }
 }
